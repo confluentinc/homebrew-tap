@@ -6,6 +6,8 @@ class Cli < Formula
     desc "CLI for Confluent Cloud and Confluent Platform"
     homepage "https://docs.confluent.io/confluent-cli/current/overview.html"
     version "3.12.0"
+
+    auto_updates true
   
     on_macos do
       if Hardware::CPU.arm?
