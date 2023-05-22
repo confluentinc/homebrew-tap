@@ -36,7 +36,7 @@ class Cli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "cli-release-stag/confluent-cli/archives/3.14.1/confluent_3.14.1_linux_amd64_homebrew.tar.gz"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.14.1/confluent_3.14.1_linux_amd64_homebrew.tar.gz"
       sha256 "e70289c98e367f4dc919111c786082a94cf0e2da94feac5e982a4ab782d18c55"
 
       def install
