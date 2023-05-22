@@ -9,7 +9,7 @@ class Cli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "cli-release-stag/confluent-cli/archives/3.14.1/confluent_3.14.1_darwin_arm64_homebrew.tar.gz"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.14.1/confluent_3.14.1_darwin_arm64_homebrew.tar.gz"
       sha256 "e6d2bc430770fd87b1137bf2d90c5db389e67a141eb18946335ac53485d65583"
 
       def install
