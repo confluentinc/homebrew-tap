@@ -28,7 +28,7 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "cli-release-stag/confluent-cli/archives/3.14.1/confluent_3.14.1_linux_arm64_homebrew.tar.gz"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.14.1/confluent_3.14.1_linux_arm64_homebrew.tar.gz"
       sha256 "8585dd88757503b56d0a749b2b4a89630cdf5a91bd237ba908ed7c17c289afcd"
 
       def install
