@@ -10,7 +10,7 @@ class Cli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.20.0/confluent_3.20.0_darwin_arm64_homebrew.tar.gz"
-      sha256 "7dacc9aef148e60baa6e5d6d3ed3c1ced777f34db986f6195226f2aab65208a7"
+      sha256 "abf7977d2fabbb7620349d6b949136fae1f917243826335b19ebb85c393cc6ef"
 
       def install
         bin.install "confluent"
@@ -18,7 +18,7 @@ class Cli < Formula
     end
     if Hardware::CPU.intel?
       url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.20.0/confluent_3.20.0_darwin_amd64_homebrew.tar.gz"
-      sha256 "9e998bf71e07b6e62ffb21841069047b89599f4d7ec537c1d55489b78c2fe3c1"
+      sha256 "bae8848e8ae46be6e94430623851e959a64b0fb761b603787120a873c6b3c947"
 
       def install
         bin.install "confluent"
@@ -29,7 +29,7 @@ class Cli < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.20.0/confluent_3.20.0_linux_arm64_homebrew.tar.gz"
-      sha256 "4153f48283ba1c7d9a97bc36bc029e7206eb5448bc01a60de4d932953b1b1199"
+      sha256 "8c8490f5ba85fd41b7dde7ef6f2de8fd386f087ae3655ecfc759ff27e5d64447"
 
       def install
         bin.install "confluent"
@@ -37,7 +37,7 @@ class Cli < Formula
     end
     if Hardware::CPU.intel?
       url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.20.0/confluent_3.20.0_linux_amd64_homebrew.tar.gz"
-      sha256 "d3c73203139435ba6a235e3d34cde1965b3fc8ec47319821187a4619c3f1b058"
+      sha256 "b8aee08f6cc2cae7de3dfb3241a30090cef247978d8e5e132d349210239a0abe"
 
       def install
         bin.install "confluent"
