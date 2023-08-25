@@ -5,20 +5,20 @@
 class Cli < Formula
   desc "CLI for Confluent Cloud and Confluent Platform"
   homepage "https://docs.confluent.io/confluent-cli/current/overview.html"
-  version "3.29.0"
+  version "3.30.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.29.0/confluent_3.29.0_darwin_amd64_homebrew.tar.gz"
-      sha256 "dc3cd9f00ffe7d32528233a866f3fa4ecf306f0b5aec2ba35412e96a4eaf3983"
+    if Hardware::CPU.arm?
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.30.0/confluent_3.30.0_darwin_arm64_homebrew.tar.gz"
+      sha256 "83d17fef38f75ddda77d24d662ff7f25ff557d02715c6dc3e1b9aefe0d509433"
 
       def install
         bin.install "confluent"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.29.0/confluent_3.29.0_darwin_arm64_homebrew.tar.gz"
-      sha256 "3df6a289dd2c310ceb0cca6f4e9a537a496b182b1b4a417f3147f7e23288fad2"
+    if Hardware::CPU.intel?
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.30.0/confluent_3.30.0_darwin_amd64_homebrew.tar.gz"
+      sha256 "618fca2dc0ccd7aa0d986a8a4571396ad6158d6bc95bc65c6163d5e3c9164e18"
 
       def install
         bin.install "confluent"
@@ -27,17 +27,17 @@ class Cli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.29.0/confluent_3.29.0_linux_arm64_homebrew.tar.gz"
-      sha256 "66fdf25780f805b2fd991f61758315f232e84f9dc711cae1155c9cbdfd9652bc"
+    if Hardware::CPU.intel?
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.30.0/confluent_3.30.0_linux_amd64_homebrew.tar.gz"
+      sha256 "180c00ba69b67afc199d591d015e97e66107a9c00fb48695dbfda5b0372c2322"
 
       def install
         bin.install "confluent"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.29.0/confluent_3.29.0_linux_amd64_homebrew.tar.gz"
-      sha256 "e47bc219c264b5ed1600c432a53fe70b8cbf4613fef904374e87d4866ee71456"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.30.0/confluent_3.30.0_linux_arm64_homebrew.tar.gz"
+      sha256 "80ee9341b06216459814c5d0b40ea890fddc1ac59a99f6b916869ff1a2d6798b"
 
       def install
         bin.install "confluent"
