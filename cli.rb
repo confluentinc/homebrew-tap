@@ -5,20 +5,20 @@
 class Cli < Formula
   desc "CLI for Confluent Cloud and Confluent Platform"
   homepage "https://docs.confluent.io/confluent-cli/current/overview.html"
-  version "3.53.0"
+  version "3.54.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.53.0/confluent_3.53.0_darwin_arm64_disableupdates.tar.gz"
-      sha256 "50ca3b35b46826090ea3fc1710e9ba6b13b1051eed039992bc55e8deb86f28db"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.54.0/confluent_3.54.0_darwin_arm64_disableupdates.tar.gz"
+      sha256 "9df0ee5e4c3efecefd94d06f70242c65daf8908ebddb1e67ec324d78cf464187"
 
       def install
         bin.install "confluent"
       end
     end
     if Hardware::CPU.intel?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.53.0/confluent_3.53.0_darwin_amd64_disableupdates.tar.gz"
-      sha256 "864390e3f7d0c737afbcf1d42168b2f6ac49a3171d457bf547253d1ba177a4ef"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.54.0/confluent_3.54.0_darwin_amd64_disableupdates.tar.gz"
+      sha256 "6f13c8074ca3be289c78e49ade4db9e4baafeaff2b6c5df758ce3106d3502918"
 
       def install
         bin.install "confluent"
@@ -28,16 +28,16 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.53.0/confluent_3.53.0_linux_arm64_disableupdates.tar.gz"
-      sha256 "946809e85c92fdc26bb557218fa917a1db89e354ba2a448080771840672d48b9"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.54.0/confluent_3.54.0_linux_arm64_disableupdates.tar.gz"
+      sha256 "d780c8d40b88db37bf0fe9b8f4ac0b4e8e3081a260761d6203545588ec19e9b5"
 
       def install
         bin.install "confluent"
       end
     end
     if Hardware::CPU.intel?
-      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.53.0/confluent_3.53.0_linux_amd64_disableupdates.tar.gz"
-      sha256 "e64af9dc4e6d77f2b6a943e6b01f3859b73b4154beba17c064dc93982d7d7064"
+      url "https://s3-us-west-2.amazonaws.com/confluent.cloud/confluent-cli/archives/3.54.0/confluent_3.54.0_linux_amd64_disableupdates.tar.gz"
+      sha256 "8b070d4bb35b46f800bd41db1e2bdce07b1b930c3782c4c8b4a4329b35a853be"
 
       def install
         bin.install "confluent"
