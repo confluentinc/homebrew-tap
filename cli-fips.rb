@@ -10,7 +10,7 @@ class CliFips < Formula
 
   on_intel do
     url "https://packages.confluent.io/confluent-cli/archives/4.10.0/confluent-fips_darwin_amd64_disableupdates.tar.gz"
-    sha256 "fa3588cbc4b966b6abc3ef04a327dd00350522bdebc2b1f305b99b4034c7b0a7"
+    sha256 "3b93d3d497fa611ae492179deff5112527cb57f8d774c008cca87fd227b46e20"
 
     def install
       bin.install "confluent"
@@ -18,7 +18,7 @@ class CliFips < Formula
   end
   on_arm do
     url "https://packages.confluent.io/confluent-cli/archives/4.10.0/confluent-fips_darwin_arm64_disableupdates.tar.gz"
-    sha256 "e523547a0b21fe00942e4d7cc20096293a64f63ef3a82a8070c6e1d061a64370"
+    sha256 "4988646df3549a6865c152deb818f0c57819d62e3d4a380a6117578805a27304"
 
     def install
       bin.install "confluent"
