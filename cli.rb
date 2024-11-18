@@ -10,7 +10,7 @@ class Cli < Formula
   on_macos do
     on_intel do
       url "https://packages.confluent.io/confluent-cli/archives/4.11.0/confluent_darwin_amd64_disableupdates.tar.gz"
-      sha256 "2c0deef78e35f834124548a8bb3ee60ea47cc848be111197d5d79fe975de4358"
+      sha256 "f2b065413057fe6d4b151281ca35314457bf8a50bdfec6fa131a7c40196323ec"
 
       def install
         bin.install "confluent"
@@ -18,7 +18,7 @@ class Cli < Formula
     end
     on_arm do
       url "https://packages.confluent.io/confluent-cli/archives/4.11.0/confluent_darwin_arm64_disableupdates.tar.gz"
-      sha256 "106bf48f70603e24b4d09c056ceb4006c3a53a9fe0136daa28564582f43e6ebd"
+      sha256 "4d96148e5c404a6a8150dbf98125cf3f2000309b4a6c577c880a4d8c8cf34eba"
 
       def install
         bin.install "confluent"
@@ -30,7 +30,7 @@ class Cli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://packages.confluent.io/confluent-cli/archives/4.11.0/confluent_linux_amd64_disableupdates.tar.gz"
-        sha256 "15effc9064302236af0a6ea653c2edea15e1e1efa9eae25408fa4557fdf2ee62"
+        sha256 "193973d8720cd265859630bbab7dfba7af44589e27f02136ce746e463d60092f"
 
         def install
           bin.install "confluent"
@@ -40,7 +40,7 @@ class Cli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://packages.confluent.io/confluent-cli/archives/4.11.0/confluent_linux_arm64_disableupdates.tar.gz"
-        sha256 "fdf76dda9e5ba472f51bd9c6ee3fe3cd7828b61aedd9c9d404ffddf446373ada"
+        sha256 "7d569d440f4cdcc4c9b9fa90dd93a3c5a378fd19d9b0902947bf9bd91ebedc6a"
 
         def install
           bin.install "confluent"
