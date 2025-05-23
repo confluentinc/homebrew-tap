@@ -5,20 +5,20 @@
 class Cli < Formula
   desc "CLI for Confluent Cloud and Confluent Platform"
   homepage "https://docs.confluent.io/confluent-cli/current/overview.html"
-  version "4.27.0"
+  version "4.27.1"
 
   on_macos do
     on_intel do
-      url "https://packages.confluent.io/confluent-cli/archives/4.27.0/confluent_darwin_amd64_disableupdates.tar.gz"
-      sha256 "48ace2d105f6e4c9a31c4a494d51be987ac01e582222d34f214ba5b082f53cc3"
+      url "https://packages.confluent.io/confluent-cli/archives/4.27.1/confluent_darwin_amd64_disableupdates.tar.gz"
+      sha256 "c280384aee491654cf83013b14240d0f2054134f8b9a8e38aa00ebbd910fdb25"
 
       def install
         bin.install "confluent"
       end
     end
     on_arm do
-      url "https://packages.confluent.io/confluent-cli/archives/4.27.0/confluent_darwin_arm64_disableupdates.tar.gz"
-      sha256 "af0892fdc8ee7b46b832b7a0a90fc324ebff288a7f17e520950609fd3421badd"
+      url "https://packages.confluent.io/confluent-cli/archives/4.27.1/confluent_darwin_arm64_disableupdates.tar.gz"
+      sha256 "c2b5a54ccd0758e14129d28023cabdc6334e57e04c46e830fd064b5e8bf52c53"
 
       def install
         bin.install "confluent"
@@ -29,8 +29,8 @@ class Cli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://packages.confluent.io/confluent-cli/archives/4.27.0/confluent_linux_amd64_disableupdates.tar.gz"
-        sha256 "c65b4369f8fc529646f673a88e12c3b7d4ebd9202d03b629e5ae38f88c233d9a"
+        url "https://packages.confluent.io/confluent-cli/archives/4.27.1/confluent_linux_amd64_disableupdates.tar.gz"
+        sha256 "064741e7d16260b724dbb4eceaa668a5fc16cf80c99702d774c6727ffc80ae8d"
 
         def install
           bin.install "confluent"
@@ -39,8 +39,8 @@ class Cli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://packages.confluent.io/confluent-cli/archives/4.27.0/confluent_linux_arm64_disableupdates.tar.gz"
-        sha256 "257f5fd4f2fe6613383b77b2b752d3324b36a70c8af839a216a9f1b963dd6bb2"
+        url "https://packages.confluent.io/confluent-cli/archives/4.27.1/confluent_linux_arm64_disableupdates.tar.gz"
+        sha256 "797ce44eed1e1f5d4ff26f7aacd01c53e7df3fa1ba174a6204b4189b8cae1c84"
 
         def install
           bin.install "confluent"
