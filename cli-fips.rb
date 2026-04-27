@@ -5,20 +5,20 @@
 class CliFips < Formula
   desc "CLI for Confluent Cloud and Confluent Platform"
   homepage "https://docs.confluent.io/confluent-cli/current/overview.html"
-  version "4.58.0"
+  version "4.59.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://packages.confluent.io/confluent-cli/archives/4.58.0/confluent-fips_darwin_amd64_disableupdates.tar.gz"
-    sha256 "2c09d2b276bfd457f6c3e42f89de8cbd8be3ab955c0b0bb491a7e171bd3eccab"
+    url "https://packages.confluent.io/confluent-cli/archives/4.59.0/confluent-fips_darwin_amd64_disableupdates.tar.gz"
+    sha256 "4229983b6114bb3e4f0a2f2762d767f5de2d6d924d3fb2febff5a92ecaa518ba"
 
     def install
       bin.install "confluent"
     end
   end
   if Hardware::CPU.arm?
-    url "https://packages.confluent.io/confluent-cli/archives/4.58.0/confluent-fips_darwin_arm64_disableupdates.tar.gz"
-    sha256 "9951a196c785b23c7003fb406af52274760657b39c6e8229e6d864e2c3e18ee7"
+    url "https://packages.confluent.io/confluent-cli/archives/4.59.0/confluent-fips_darwin_arm64_disableupdates.tar.gz"
+    sha256 "ea38e2d709bfd1239974bc2879c97125933288ba2ac38786f0c721d3eacc2cac"
 
     def install
       bin.install "confluent"
