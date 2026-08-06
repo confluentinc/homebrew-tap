@@ -10,7 +10,7 @@ class CliFips < Formula
 
   if Hardware::CPU.intel?
     url "https://packages.confluent.io/confluent-cli/archives/4.72.0/confluent-fips_darwin_amd64_disableupdates.tar.gz"
-    sha256 "f926c392c9c2b32c4362a5f476650f3eaddca933669f06073e50ab443de135db"
+    sha256 "bf9730743dcddb06cc3e5c4afb864eec20bd17f821145285ca0900fd7362d9c3"
 
     def install
       bin.install "confluent"
@@ -18,7 +18,7 @@ class CliFips < Formula
   end
   if Hardware::CPU.arm?
     url "https://packages.confluent.io/confluent-cli/archives/4.72.0/confluent-fips_darwin_arm64_disableupdates.tar.gz"
-    sha256 "db6c667fa928a8c020a42aee943af8c6cff37e029c538ce1badc800c4ded4e0f"
+    sha256 "3fe3719110616ae8ba9394860167384245717ab12a1f96d59044ec630d0141dd"
 
     def install
       bin.install "confluent"
