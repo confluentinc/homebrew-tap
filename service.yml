@@ -2,5 +2,3 @@ name: homebrew-tap
 lang: unknown
 git:
   enable: true
-github:
-  enable: true
